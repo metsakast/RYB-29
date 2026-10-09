@@ -44,7 +44,6 @@ float algo_estimate_stress(Measurement m, int *src)
         s = s_hr;
         *src = 0;
     }
-
     return s;
 }
 
@@ -72,7 +71,6 @@ Command algo_step(Measurement m, float t)
     case ST_DONE:
         break;
     }
-
     (void)t_entered; (void)t;
     return cmd;
 }
